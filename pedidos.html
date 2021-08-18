@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Oswald:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Google Fonts-->
+    <!--Iconos fonts-->
+    <link rel=”stylesheet” href=”css\fontawesome-free-5.15.3-web“>
+
+    <!--Card-->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+    <title>Registro de Pedido</title>
+
+    <!-- Bootstrap core CSS -->
+
+
+
+    <style>
+      *{
+        font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .form-group{
+        margin-left: 1250px;
+
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="./css/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color:#f2f2f2;">
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header"> 
+         <!-- <a class="navbar-brand" href="index.html">--><img src="img/personal.png" class="navbar-brand"  >
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><strong>Inicio</strong></a></li>
+          <li><a href="pedidos.html"><strong>Pedidos</strong></a></li>
+          <li><a href="nosotros.html"><strong>Acerca de Nosotros</strong></a></li>
+          <li><a href="contacto.html"><strong>Contacto</strong></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span><strong> Acceder</strong></a></li>
+        </ul>
+      </div>
+  </nav>
+  <div class="py-5 text-center">
+    <h2>Formulario de Pedido</h2>
+  </div>
+
+
+    <div class="col-md-12  text-center">
+      <div<div id="login-row" class="row justify-content-center align-items-center">
+        <form id="login-form" class="form" action="" method="post">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Tu nombre" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Tu apellido" value="" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre de usuario</label>
+            <input type="text" class="form-control" id="firstName" placeholder="@pepito" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="pepito@gmail.com">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="address">Lugar de Entrega</label>
+          <input type="text" class="form-control" id="address" placeholder="Calle" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="zip">Codigo Postal</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+          </div>
+        </div>
+        
+        <hr class="mb-6">
+
+        <h4 class="mb-3">Forma de Pago</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Mercado Pago</label>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Nombre del Titular</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Número de la tarjeta</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+          </div>
+        </div>
+        <div class="row">
+		          <div class="col-md-3 mb-3"></div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Fecha de Vto.</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+     
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">Código</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+          </div>
+        </div> <br> <br> <br>
+        <div class="form-group">
+          <input type="submit" name="submit" class="btn btn-info btn-md" value="Enviar">
+      </div>
+
+      </form>
+    </div>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2021</p>
+    
+  </footer>
+</div>
+		<script src="./js/jquery.js"></script>
+        <script src="./js/form-validation.js"></script></body>
+</html>

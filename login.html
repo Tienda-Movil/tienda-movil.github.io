@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Acceder</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+ <!--Google Fonts-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Oswald:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;
+  }
+
+  #login{
+    margin-top: -70px;
+  }
+  #login .container #login-row #login-column #login-box {
+    margin-top: 100px;
+    margin-left: 270px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #afafaf;
+    background-color: #e5e5e5;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+    </style>
+     <!--NAVBAR-->
+     <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header"> 
+         <!-- <a class="navbar-brand" href="index.html">--><img src="img/personal.png" class="navbar-brand"  >
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><strong>Inicio</strong></a></li>
+          <li><a href="pedidos.html"><strong>Pedidos</strong></a></li>
+          <li><a href="nosotros.html"><strong>Acerca de Nosotros</strong></a></li>
+          <li><a href="contacto.html"><strong>Contacto</strong></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span><strong> Acceder</strong></a></li>
+        </ul>
+      </div>
+  </nav>
+  
+    <!--Aceeso/login-->
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Acceso</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Email:</label><br>
+                                <input type="text" name="username" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Clave:</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Enviar">
+                            </div> <br>
+                            <div id="register-link" class="text-right">
+                                ¿No tienes cuenta aun? Registrate<a href="registrate.html" class="text-info"> Aqui</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!--Aceeso/login-->
+</body>
+</html>

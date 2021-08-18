@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <link rel="stylesheet" href="css/estilo.css">
@@ -16,6 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Oswald:wght@300&family=Quicksand&display=swap" rel="stylesheet">
     <!--Iconos fonts-->
     <link rel=”stylesheet” href=”css\fontawesome-free-5.15.3-web“>
+
+    <!--Card-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 
 
   </head>
@@ -28,20 +32,11 @@
               </div>
               <ul class="nav navbar-nav">
                 <li><a href="index.html"><strong>Inicio</strong></a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Tienda</strong><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="pedidos.html">Pedidos</a></li>
-                    <li><a href="consultas.html">Consultas</a></li>
-                  </ul>
-                </li>
                 <li><a href="pedidos.html"><strong>Pedidos</strong></a></li>
-                <li><a href="consultas.html"><strong>Consultas</strong></a></li>
                 <li><a href="nosotros.html"><strong>Acerca de Nosotros</strong></a></li>
                 <li><a href="contacto.html"><strong>Contacto</strong></a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="registrate.html"><span class="glyphicon glyphicon-user"></span> <strong> Registrarse</strong></a></li>
                 <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span><strong> Acceder</strong></a></li>
               </ul>
             </div>
@@ -49,10 +44,94 @@
         <!-- navbar-->
 
         <!--body-->
+        <div class="acerca">
+          <h2>Tienda</h2>
+          <p>Mira nuestros celulares mas modernos, con garantia y respaldo por la compañia de fabrica</p>
+          <div class="container">     
+
+            <div class="col-6">
+
+                <div class="card1">
+
+                        <img src="img\samsunga32.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+
+                             <h5 class="card-title">Samsung Galaxy A32 - Negro</h5>
+
+                                    <p class="card-text">No te pierdas de un solo momento con el nuevo Samsung Galaxy A32. Con su cámara de 64+8+5+5 Mp; sacá fotos nítidas y claras tanto de día como de noche. El Samsung Galaxy A32 posee un procesador Octa-Core (2.0GHz, 1.8GHz) para que disfrutes de todas tus aplicaciones sin inconvenientes. Memoria interna de 128 GB y expandible con una MicroSd hasta 1TB</p>
+
+                                    <p class="card-text"> <strong>$36.000.00</strong></p>
+                                    
+                    </div>
+                        <form id="login-form" class="form" action="login.html" method="post">
+                        <div class="form-group">
+                          <input type="submit" name="submit" class="btn btn-info btn-md" value="Hacer pedido">
+                        </div>
+
+                </div>
+
+            </div> 
+
+            <!--Card2-->
+            <div class="col-6">
+
+              <div class="card2">
+
+                      <img src="img\motog100.jpg" class="card-img-top" alt="...">
+
+                  <div class="card-body">
+
+                           <h5 class="card-title">Motorola Moto G100 - Verde Boreal + Cable HDMI</h5>
+
+                                  <p class="card-text">Te presentamos el Motorola Moto G100 con un procesador Octa-Core 3.2 GHz para que estés al día con todas las aplicaciones y juegos de última generación. Descubrí todas las posibilidades para tus fotos, tanto de día como de noche, con la cámara de 64+16+2 Mp+ToF. Memoria interna de 128 GB y expandible con una MicroSd hasta 1TB</p>
+
+                                  <p class="card-text"> <strong>$89.000.00</strong></p>
+                                  
+                  </div>
+                      <form id="login-form" class="form" action="login.html" method="post">
+                      <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-info btn-md" value="Hacer pedido">
+                      </div>
+
+              </div>
+
+          </div>
+            <!--Card2-->
+            <!--Card3-->
+            <div class="col-6">
+
+              <div class="card3">
+
+                      <img src="img\iphone.jpg" class="card-img-top" alt="...">
+
+                  <div class="card-body">
+
+                           <h5 class="card-title">iPhone 12 Pro Max (256 GB) - Grafito
+                          </h5>
+
+                                  <p class="card-text">Encontrá en Personal el iPhone 12 Pro Max con procesador A14 Bionic, 256 GB de almacenamiento interno y triple cámara de 12+12+12 MP.</p>
+                  
+                                  <p class="card-text"> <strong>$340.000.00</strong></p>
+                   </div>
+                      <form id="login-form" class="form" action="login.html" method="post">
+                      <div class="form-group">
+                        <input type="submit" name="submit" class="btn btn-info btn-md" value="Hacer pedido">
+                      </div>
+
+              </div>
+
+          </div>
+            <!--Card3-->
+       </div>
+
+       <br>
+       <br>
+       <br>
+          
      
         <!--body-->
         <!--Footer-->
-          <!-- Site footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -83,14 +162,6 @@
               <li><a href="pedidos.html">Pedido</a></li>
             </ul>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa-li fa fa-pencil"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
         </div>
         <hr>
       </div>
@@ -100,103 +171,5 @@
             </p>
       </div>
     </footer>
-          
-<!--
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
-        -->
-        
-
-        <!--Footer-->
-
-
 </body>
 </html>
-
-        
-        <!--FOOTER-     
-        <div id="tpi-footer-middle">
-                <div class="tpi-footer-row-mid">
-                          <ul>
-                              <li><a href="https://institucional.telecom.com.ar/" target="_blank">Companía</a></li>
-                              <li><a href="https://institucional.telecom.com.ar/inversores/" target="_blank">Inversores</a></li>
-          <li><a href="https://institucional.telecom.com.ar/prensa/" target="_blank">Prensa</a></li>
-          <li><a href="https://institucional.telecom.com.ar/grupotelecom.html#es" target="_blank">RRHH</a></li>
-          <li><a href="https://institucional.telecom.com.ar/rse/" target="_blank">RSE</a></li>
-          <li><a href="http://institucional.telecom.com.ar/accesibilidad/" target="_blank">Accesibilidad</a></li>
-      </ul>
-      <br clear="all">
-      <a href="https://www.personal.com.ar/" class="logo-footer"><img src="./Accesorios para Celulares _ Tienda Personal_files/triada-cablevision-footer.svg"></a>
-      <div class="der">
-          <p>Defensa de las y los Consumidores. Para reclamos <a target="_blank" href="https://www.argentina.gob.ar/iniciar-un-reclamo-ante-defensa-de-las-y-los-consumidores">ingrese aquí</a></p>
-          <ul>
-              <li><a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305484/texact.htm" target="_blank">Reglamento de cliente servicios TIC</a></li>
-              <li><a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/texact.htm" target="_blank">Ley 24240</a></li>
-              <li><a href="https://www.cablevisionfibertel.com.ar/prestacion-basica-universal" target="_blank">Prestación Básica Universal</a> | Enacom <a href="mailto:contacto@enacom.gob.ar">contacto@enacom.gob.ar</a></li>
-              <li><a href="https://www.personal.com.ar/institucional/terminos_y_condiciones/" target="_blank">Contrato de adhesión</a></li>
-              <li><a href="https://www.personal.com.ar/pdf/2018-06-06-Politica-de-privacidad.pdf" target="_blank">Política de Privacidad de Telecom Argentina S.A.</a></li>
-              <li><a href="https://www.personal.com.ar/institucional/terminos_y_condiciones/suspension_plazos_garantias.html">Suspensión de los Plazos de Garantías</a></li>
-              <li><a href="https://www.personal.com.ar/cancelar-servicio">Arrepentimiento</a></li>
-          </ul>
-      </div>
-      <div class="logos">
-        <a class="afip" href="http://qr.afip.gob.ar/?qr=hWhYVXz8kBiBz4Y6UGY1SA,," target="_F960AFIPInfo">
-            <img src="./Accesorios para Celulares _ Tienda Personal_files/DATAWEB.jpg" border="0" width="63" alt="Data Fiscal">
-        </a>
-        <a class="aaip" href="https://www.argentina.gob.ar/aaip/datospersonales/reclama/30639453738--RL-2019-80598125-APN-DNPDP#AAIP">
-            <img src="./Accesorios para Celulares _ Tienda Personal_files/aaip-isologo.png" alt="AAIP RNBD" style="width:67px;border:0;">
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright tpi-footer-row">
-    <p>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro del territorio de la República Argentina 1997 / 2021 Telecom Argentina S.A.<br>
-        Todos los derechos reservados - Alicia Moreau de Justo 50 - Ciudad de Bs. As. CUIT 30-63945373-8</p>
-  </div>
-  
-  <div id="tpi-footer-bottom" class="tpi-footer-row">
-      <div class="tpi-footer-row-ini">
-          <a href="https://www.personal.com.ar/"><img src="./Accesorios para Celulares _ Tienda Personal_files/logo-grey(1).png" alt="Personal" width="90" height="32"></a>
-      </div>
-      <div class="tpi-footer-row-mid">
-          <ul>
-              
-                  <li><a href="http://institucional.telecom.com.ar/">Institucional</a></li>
-                  
-                    <li><a href="https://www.personal.com.ar/portabilidad">Portabilidad</a></li>
-                  
-                    <li><a href="http://grupotelecom.hiringroom.com/jobs">Dejanos tu CV</a></li>
-                  
-                  <li><a href="https://www.telecom.com.ar/inversores.htm">Inversores</a></li>
-                  
-                    <li><a href="https://www.telecom.com.ar/institucionales/conozca/conozca_responsabilidad.htm">Responsabilidad Social</a></li>
-                    <li><a href="https://prensa.telecom.com.ar/Home.htm">Prensa</a></li>
-                    <li><a href="https://www.personal.com.ar/institucional/terminos_y_condiciones/terminos_y_condiciones.html">Terminos y Condiciones</a></li>
-                    <li><a href="https://www.personal.com.ar/institucional/terminos_y_condiciones/normativa.html">Legal / Normativo</a></li>
-              
-              <li><a href="https://www.telecom.com.ar/institucionales/conozca/conozca_responsabilidad.html">Compromiso ante la CNDC</a></li>
-              <li><a href="https://www.enacom.gob.ar/">ENACOM</a></li>
-          </ul>
-      </div>
-      <div class="tpi-footer-row-end">
-        <a href="http://qr.afip.gob.ar/?qr=hWhYVXz8kBiBz4Y6UGY1SA,," target="_F960AFIPInfo">
-            <img src="./Accesorios para Celulares _ Tienda Personal_files/DATAWEB.jpg" border="0" width="63" alt="Data Fiscal">
-        </a>
-        <a href="https://www.argentina.gob.ar/aaip/datospersonales/reclama/30639453738--RL-2019-80598125-APN-DNPDP#AAIP">
-          <img src="./Accesorios para Celulares _ Tienda Personal_files/aaip-isologo.png" alt="AAIP RNBD" style="width:55px;height:71px;border:0;">
-        </a>
-      </div>
-  </div><div class="clearfix"></div>
-<div class="footer-copyright tpi-footer-row general">
-  <p>Telecom Argentina S.A. - Todos los derechos reservados - Alicia Moreau de Justo 50 - Ciudad de Bs. As. - CUIT 30-63945373-8</p>
-</div>
-</footer>
-
-</body>
--->
